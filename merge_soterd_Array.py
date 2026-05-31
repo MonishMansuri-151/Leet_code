@@ -25,9 +25,9 @@ class Slution:
         return self.num1
 
 
-a = [1]
-b = []
-m = 1
-n = 0
+a = [1, 2, 3, 0, 0, 0]
+b = [2, 5, 6]
+m = 3
+n = 3
 obj = Slution(a, b, m, n)
 print(obj.merge_sort())
