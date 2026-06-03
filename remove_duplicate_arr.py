@@ -17,3 +17,4 @@ arr = [1, 1, 2]
 obj = Solution()
 x = obj.removeDuplicates(arr)
 print(x)
+print(arr)
