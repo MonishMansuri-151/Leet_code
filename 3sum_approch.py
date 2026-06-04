@@ -4,7 +4,6 @@
 # b. Expected Output: [(-1, -1, 2), (-1, 0, 1)]
 lis = [-1, 0, 1, 2, -1, -4]
 lis.sort()
-# print(lis)
 size = len(lis)
 ans = []
 for i in range(size):

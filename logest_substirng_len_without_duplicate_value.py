@@ -23,10 +23,6 @@ def sub_long(my_str):
             else:
                 print(my_str[j], end=" ")
                 my_set.add(my_str[j])
-                # res = j - i + 1
-                # # print(res)
-                # if res > maxi:
-                #     maxi = res
                 maxi = max(maxi, j - i + 1)
             j = j + 1
         print("")
