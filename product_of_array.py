@@ -23,9 +23,9 @@ class Solution(object):
             pre[i] = pre[i - 1] * nums[i - 1]
         print(pre)
         suffix = 1
-        for i in range(len(nums) - 2, -1, -1):
-            suffix *= nums[i + 1]
-            pre[i] *= suffix
+        for j in range(len(nums) - 2, -1, -1):
+            suffix *= nums[j + 1]
+            pre[j] *= suffix
         print(pre)
 
 
