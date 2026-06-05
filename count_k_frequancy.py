@@ -19,12 +19,15 @@ class Solution:
 
         for num, freq in count.items():
             buckets[freq].append(num)
+        print(buckets)
 
         ans = []
 
         for i in range(len(buckets) - 1, 0, -1):
+            print(buckets[i])
             for num in buckets[i]:
                 ans.append(num)
+                print(ans)
 
                 if len(ans) == k:
                     return ans
