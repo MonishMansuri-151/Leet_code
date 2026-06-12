@@ -8,7 +8,6 @@ class Solution:
             if nums_counter[n] <= 2:
                 nums[k] = n
                 k += 1
-
         return k
 
 

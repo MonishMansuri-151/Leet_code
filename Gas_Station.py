@@ -25,21 +25,26 @@ class Solution(object):
         """
         start = 0
         current_gas = 0
-        total_gas = 0
-        total_cost = 0
+        total_gas = sum(gas)
+        total_cost = sum(cost)
+
         for i in range(len(gas)):
-            total_gas += gas[i]
-            total_cost += cost[i]
+            # total_gas += gas[i]
+            # total_cost += cost[i]
+            if total_gas < total_cost:
+                return -1
             current_gas += gas[i] - cost[i]
             if current_gas < 0:
                 start = i + 1
                 current_gas = 0
-        if total_gas < total_cost:
-            return -1
+        # if total_gas < total_cost:
+        #     return -1
         return start
 
 
-gas = [1, 2, 3, 4, 5]
-cost = [3, 4, 5, 1, 2]
+# gas = [1, 2, 3, 4, 5]
+# cost = [3, 4, 5, 1, 2]
+gas = [2, 3, 4]
+cost = [3, 4, 3]
 obj = Solution()
 print(obj.canCompleteCircuit(gas, cost))
