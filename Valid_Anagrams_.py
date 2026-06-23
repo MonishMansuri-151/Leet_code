@@ -13,11 +13,15 @@ class Solution:
             return False
         for i in range(len(s)):
             countS[s[i]] = countS.get(s[i], 0) + 1
-            countT[t[i]] = countT.get(s[i], 0) + 1
+            countT[t[i]] = countT.get(t[i], 0) + 1
+        print(countS)
+        print(countT)
         return countT == countS
 
 
-s = "a"
-t = "ab"
+# s = "a"
+# t = "ab"
+s = "anagram"
+t = "nagaram"
 obj = Solution()
 print(obj.Valid_Anagram(s, t))

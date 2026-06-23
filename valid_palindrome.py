@@ -1,5 +1,5 @@
 # s=  "A man, a plan, a canal: Panama"
-s = "0P"
+s = "maam"
 r = s.lower()
 print(r)
 alp = ""

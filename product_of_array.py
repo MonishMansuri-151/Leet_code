@@ -18,6 +18,7 @@ class Solution(object):
         """
 
         pre = [0] * len(nums)
+        print(pre)
         pre[0] = 1
         for i in range(1, len(nums)):
             pre[i] = pre[i - 1] * nums[i - 1]

@@ -32,6 +32,7 @@ class Solution(object):
                 my_dict[prifix_sum] = 1
             else:
                 my_dict[prifix_sum] += 1
+            print(my_dict)
         return result
 
 

@@ -42,9 +42,9 @@ class Solution(object):
         return start
 
 
-# gas = [1, 2, 3, 4, 5]
-# cost = [3, 4, 5, 1, 2]
-gas = [2, 3, 4]
-cost = [3, 4, 3]
+gas = [1, 2, 3, 4, 5]
+cost = [3, 4, 5, 1, 2]
+# gas = [2, 3, 4]
+# cost = [3, 4, 3]
 obj = Solution()
 print(obj.canCompleteCircuit(gas, cost))

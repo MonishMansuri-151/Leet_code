@@ -35,6 +35,7 @@ class Solution(object):
                 left += 1
             if len(my_dict) <= 2:
                 maxi = max(maxi, right - left + 1)
+                print(maxi)
             right += 1
         return maxi
 
