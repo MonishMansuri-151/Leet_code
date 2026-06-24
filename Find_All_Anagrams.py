@@ -25,11 +25,11 @@ class Solution(object):
         m = len(p)
         if n < m:
             return []
-        ans = []
         p_count = Counter(p)
         print(p_count)
         window_right = Counter(s[:m])
         print(window_right)
+        ans = []
         if p_count == window_right:
             ans.append(0)
         for i in range(m, n):
@@ -38,10 +38,12 @@ class Solution(object):
             left_char = s[i - m]
             # print(left_char)
             window_right[left_char] -= 1
+
             # print(window_right)
             if window_right[left_char] == 0:
                 del window_right[left_char]
             # print(window_right)
+            # left_char += 1
             if p_count == window_right:
                 ans.append(i - m + 1)
         return ans
