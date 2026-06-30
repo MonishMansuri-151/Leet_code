@@ -13,7 +13,6 @@
 # Note: The characters in the array beyond the returned length do not matter and should be ignored.
 # Example 1:
 
-
 # Input: chars = ["a","a","b","b","c","c","c"]
 # Output: 6
 # Explanation: The groups are "aa", "bb", and "ccc". This compresses to "a2b2c3".

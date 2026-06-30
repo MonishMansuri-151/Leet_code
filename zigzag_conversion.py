@@ -39,6 +39,7 @@ class Solution(object):
                 currentrow += 1
             else:
                 currentrow -= 1
+        print(rows)        
         return "".join(rows)
 
 

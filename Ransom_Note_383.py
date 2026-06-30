@@ -32,6 +32,6 @@ class Solution(object):
 
 
 ransomNote = "aa"
-magazine = "ab"
+magazine = "aab"
 obj = Solution()
 print(obj.canConstruct(ransomNote, magazine))
